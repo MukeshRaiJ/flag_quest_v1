@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Rancho&family=Signika+Negative:wght@300..700&display=swap");
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #171923;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Rancho", cursive;
+}
+
+.card {
+  padding: 20px;
+  background-color: inherit;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.title {
+  font-size: 38px;
+  color: #ffbf00;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.dark .title {
+  color: #f7f9fc;
+}
+
+.logo {
+  margin-right: 10px;
+}
+
+.score {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffbf00;
+  text-align: right;
+}
+
+.dark .score {
+  color: #ffbf00;
+}
+
+.timer {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffbf00;
+  text-align: right;
+}
+
+.dark .timer {
+  color: #ffbf00;
+}
+
+.intro {
+  margin-bottom: 20px;
+}
+
+.welcome {
+  font-size: 30px;
+  color: #ffbf00;
+  margin-bottom: 10px;
+}
+
+.rules {
+  font-size: 20px;
+  color: #f7f9fc;
+}
+
+.gameSettings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question {
+  font-size: 28px;
+  color: #ffbf00;
+  margin-bottom: 20px;
+}
+
+.dark .question {
+  color: #ddd;
+}
+
+.dropZone {
+  width: 250px;
+  height: 150px;
+  border: 2px dashed #ffbf00;
+  margin: 20px auto;
+  line-height: 150px;
+  color: #ffbf00;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #282c34;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flag {
+  width: 100px;
+  height: 70px;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  border: 2px solid #ffbf00;
+}
+
+.flag:hover {
+  transform: scale(1.1);
+}
+
+.correctFlag {
+  border-color: red !important;
+  border: 5px solid red;
+}
+
+.fact {
+  margin-top: 20px;
+  font-size: 18px;
+  font-style: italic;
+  background-color: #fff3cd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dark .fact {
+  background-color: #444;
+  color: #f7f9fc;
+}
+
+.startButton {
+  padding: 15px 30px;
+  font-size: 22px;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 191, 0, 1) 0%,
+    rgba(255, 128, 0, 1) 100%
+  );
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.startButton:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 128, 0, 1) 0%,
+    rgba(255, 191, 0, 1) 100%
+  );
+  transform: scale(1.05);
+}
+
+.durationButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.durationButton {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 191, 0, 1) 0%,
+    rgba(255, 128, 0, 1) 100%
+  );
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.durationButton:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 128, 0, 1) 0%,
+    rgba(255, 191, 0, 1) 100%
+  );
+  transform: scale(1.05);
+}
+
+.selectedButton {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 128, 0, 1) 0%,
+    rgba(255, 191, 0, 1) 100%
+  );
+  transform: scale(1.1);
+  border: 3px solid #fff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+  .dropZone {
+    width: 200px;
+    height: 120px;
+  }
+  .flag {
+    width: 80px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 400px;
+  }
+  .dropZone {
+    width: 150px;
+    height: 100px;
+  }
+  .flag {
+    width: 60px;
+    height: 40px;
+  }
+}
