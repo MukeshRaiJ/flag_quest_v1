@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Access the game at https://flagquestv1.netlify.app/
 
-## Getting Started
+Welcome to Flag Quest, an engaging educational game where you can test your knowledge of world flags!
+Overview
 
-First, run the development server:
+Flag Quest challenges players to match countries with their flags. Players select a game duration (3 or 5 minutes), start the game, and earn points by correctly identifying countries by their flags within the allotted time.
+Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    Dynamic Gameplay: Randomly selects countries and their flags for each game session.
+    Score Tracking: Real-time display of the player's score.
+    Timer: Countdown to track remaining game time.
+    Feedback: Provides instant feedback on correct and incorrect answers.
+    Educational Facts: After answering, displays interesting facts about each country.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Getting Started
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+To play Flag Quest:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    Access the game at Flag Quest Game.
+    Choose your preferred game duration (3 minutes or 5 minutes).
+    Start the game and match countries with their flags within the time limit.
 
-## Learn More
+Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+    React
+    Next.js (for server-side rendering)
+    CSS Modules (for scoped styling)
+    Next Image (for optimized image loading)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+To run this project locally:
 
-## Deploy on Vercel
+    Clone the repository: git clone <repo-url>
+    Install dependencies: npm install
+    Run the development server: npm run dev
+    Open http://localhost:3000 to view it in the browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+JSON Data
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The game utilizes countries.json located in the public directory to load country data.
+Credits
+
+    Flag icons sourced from Flagpedia.
+
+Author
+
+Developed by Mukesh Rai.
