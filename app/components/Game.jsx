@@ -52,10 +52,8 @@ const FlagQuest = () => {
     setOptions(shuffledOptions);
   };
 
-  const handleDrop = (event) => {
-    event.preventDefault();
-    const droppedCountryName = event.dataTransfer.getData("text/plain");
-    if (droppedCountryName === currentCountry.name) {
+  const handleOptionClick = (countryName) => {
+    if (countryName === currentCountry.name) {
       setScore(score + 1);
     } else {
       alert("Wrong answer! Try again.");
@@ -67,10 +65,6 @@ const FlagQuest = () => {
       setHighlightCorrect(false);
       loadNewQuestion(countries);
     }, 3000);
-  };
-
-  const handleDragOver = (event) => {
-    event.preventDefault();
   };
 
   const startGame = () => {
@@ -161,13 +155,6 @@ const FlagQuest = () => {
               <div>
                 <div className={styles.question}>
                   <h2>Which country is {currentCountry.name}?</h2>
-                  <div
-                    className={styles.dropZone}
-                    onDrop={handleDrop}
-                    onDragOver={handleDragOver}
-                  >
-                    Drop the flag here
-                  </div>
                 </div>
                 <div className={styles.options}>
                   {options.map((option) => (
@@ -182,18 +169,15 @@ const FlagQuest = () => {
                           ? styles.correctFlag
                           : ""
                       }`}
-                      draggable
-                      onDragStart={(event) =>
-                        event.dataTransfer.setData("text/plain", option.name)
-                      }
+                      onClick={() => handleOptionClick(option.name)}
                     />
                   ))}
                 </div>
                 {showFact && (
                   <div className={styles.fact}>
                     <p>
-                      {currentCountry.name} is a beautiful country situated in{" "}
-                      {currentCountry.continent}.
+                      {currentCountry.name} is a beautiful country situated in{" "} 
+                      {currentCountry.continent} continent.
                     </p>
                     <p>{currentCountry.fact}</p>
                   </div>
