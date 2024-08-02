@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import styles from "./game.module.css";
 
-const CountryGame = () => {
+const FlagQuest = () => {
   const [countries, setCountries] = useState([]);
   const [currentCountry, setCurrentCountry] = useState(null);
   const [options, setOptions] = useState([]);
@@ -207,4 +207,4 @@ const CountryGame = () => {
   );
 };
 
-export default CountryGame;
+export default FlagQuest;
